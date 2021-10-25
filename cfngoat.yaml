@@ -642,6 +642,7 @@ Resources:
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-data-science"
       PublicAccessBlockConfiguration:
         RestrictPublicBuckets: True
+        BlockPublicAcls: True
 
   LogsBucket:
     # not encrypted
