@@ -202,6 +202,8 @@ Resources:
       Tags:
         - Key: Name
           Value: !Sub "${AWS::AccountId}-${CompanyName}-${Environment}-flowlogs"
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: True
   
   #############
   ###  IAM  ###
